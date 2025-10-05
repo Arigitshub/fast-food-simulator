@@ -1,8 +1,11 @@
 # fast-food-simulator
-
 - Restaurant Cleaning
 - Restroom Cleaning
 - Lobby Filter
 - More Character Customization Elements
 - Trolley to carry boxes
 - Full Controller Support
+- Day/night cycle
+- Customer/employee AI
+- Money/score system
+- Real controller/gamepad integration
