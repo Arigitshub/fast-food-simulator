@@ -1,13 +1,7 @@
 """Restaurant and restroom cleaning functions."""
 
 def restaurant_cleaning():
-    """Perform restaurant cleaning tasks."""
-    print("Starting restaurant cleaning...")
-    # TODO: Implement restaurant cleaning logic
-    pass
+    print("Sweep floors, wipe tables, empty bins. Cleaning complete!")
 
 def restroom_cleaning():
-    """Perform restroom cleaning tasks."""
-    print("Starting restroom cleaning...")
-    # TODO: Implement restroom cleaning logic
-    pass
+    print("Scrub toilets, mop floors, restock soap. Restroom clean!")
