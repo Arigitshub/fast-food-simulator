@@ -3,10 +3,35 @@ import customization
 from trolley import Trolley
 from controller_support import enable_controller_support
 
+# Day/Night Cycle Placeholder
+# TODO: Implement full day/night cycle system
+class DayNightCycle:
+    """Placeholder for day/night cycle logic."""
+    
+    def __init__(self):
+        self.time_of_day = "day"  # "day" or "night"
+        self.time_elapsed = 0
+        self.cycle_duration = 300  # seconds for a full cycle
+    
+    def update(self, delta_time):
+        """Update the day/night cycle. To be implemented."""
+        self.time_elapsed += delta_time
+        if self.time_elapsed >= self.cycle_duration / 2:
+            self.time_of_day = "night" if self.time_of_day == "day" else "day"
+            self.time_elapsed = 0
+    
+    def get_time_of_day(self):
+        """Get current time of day."""
+        return self.time_of_day
+
 def main():
     print("Welcome to Fast Food Simulator!\n")
     enable_controller_support()
     trolley = Trolley()
+    
+    # Initialize day/night cycle (placeholder)
+    day_night = DayNightCycle()
+    print(f"Game starts during: {day_night.get_time_of_day()}")
     
     while True:
         print("\nChoose an action:")
